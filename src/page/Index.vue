@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+    <div class="personal">
+        个人中心
+    </div>
 </template>
 
 <script>

@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <router-view />
-  </div>
+    <div class="left">
+        不知道左边叫啥
+    </div>
 </template>
 
 <script>
