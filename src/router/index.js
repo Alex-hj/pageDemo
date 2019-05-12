@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from "vue-router"
 import Index from "../page/Index.vue"
-import Left from "../page/Left.vue"
+import Msg from "../page/Msg.vue"
 import Personal from "../page/Personal.vue"
 import DefaultPage from "../layout/default.vue"
 
@@ -18,9 +18,9 @@ export default new Router({
                 name:"index",
                 component:Index
             },{
-                path:"/left",
-                name:"left",
-                component:Left
+                path:"/msg",
+                name:"msg",
+                component:Msg
             },{
                 path:"/personal",
                 name:"personal",

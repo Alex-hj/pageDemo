@@ -1,11 +1,11 @@
 <template>
-    <div>
-        <div>
+    <div class="page">
+        <div class="contentArea">
             <router-view></router-view>
         </div>
         <div class="tab-nav">
             <div>
-                <router-link :to="{name:'left'}">左边</router-link>
+                <router-link :to="{name:'msg'}">消息</router-link>
             </div>
             <div>
                 <router-link :to="{name:'index'}">主页</router-link>
@@ -23,6 +23,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+@import "../assets/css/default.scss";
 </style>

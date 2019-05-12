@@ -1,0 +1,33 @@
+.container{
+    margin:10px 0px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width:auto;
+    white-space:nowrap;
+    .singleWrap{
+        display:inline-block;
+        margin-left:20px;
+        .single-assit{
+            text-align: center;
+            .middle-text{
+                width:60px;
+                height:60px;
+                background:red;
+                border-radius: 50%;
+                >span,i{
+                    width:60px;
+                    line-height:60px;
+                    font-size:30px;
+                    font-weight:500;
+                    color:#fff;
+                    font-family: KaiTi;
+                }
+            }
+            >span{
+                font-size:14px;
+                color:#666;
+            }
+        }
+    }
+    
+}

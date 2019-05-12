@@ -10,6 +10,6 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang='scss'>
+@import "./assets/css/init.scss";
 </style>
