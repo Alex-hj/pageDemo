@@ -1,33 +1,31 @@
 .index{
     box-sizing: border-box;
     width:100%;
-    padding:15px;
-    .function{
-        .el-input{
-            input{
-                height:24px;
+    .mainContent{
+        padding:15px;
+        .function{
+        
+            .el-carousel{
+                .el-carousel__container{
+                    width:100%;
+                }
+                .el-carousel__item h3 {
+                    color: #475669;
+                    font-size: 18px;
+                    opacity: 0.75;
+                    line-height: 200px;
+                    margin: 0;
+                  }
+                  
+                  .el-carousel__item:nth-child(2n) {
+                    background-color: #99a9bf;
+                  }
+                  
+                  .el-carousel__item:nth-child(2n+1) {
+                    background-color: #d3dce6;
+                  }
             }
-        }
-        .el-carousel{
-            margin-top:10px;
-            .el-carousel__container{
-                width:100%;
-            }
-            .el-carousel__item h3 {
-                color: #475669;
-                font-size: 18px;
-                opacity: 0.75;
-                line-height: 200px;
-                margin: 0;
-              }
-              
-              .el-carousel__item:nth-child(2n) {
-                background-color: #99a9bf;
-              }
-              
-              .el-carousel__item:nth-child(2n+1) {
-                background-color: #d3dce6;
-              }
         }
     }
+    
 }
