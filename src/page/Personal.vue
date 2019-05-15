@@ -1,39 +1,37 @@
 <template>
     <div class="personal">
-        <div class="info">   
-            <div class="headImg">
+        <div class="header">
+            <div class="setAndAuthentication">
+                <div class="authentication">
+                    <i class="el-icon-circle-check"></i>
+                    已认证
+                </div>
+                <div class="set">
+                    <i class="el-icon-setting"></i>
+                </div>
+            </div>
+            <div class="info">
                 <img src="../assets/touxiang.jpg" alt="">
-            </div>
-            <div class="des">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
+                <span class="userName">a</span>
+                <span class="id">ID:1491799</span>
             </div>
         </div>
-        <div class="ino">
+        <div class="option">
             <div>
-                <div></div>
-            </div>
+                <i class="el-icon-star-off"></i>
+                收藏</div>
             <div>
-                <div></div>
-            </div>
+                <i class="el-icon-search"></i>
+                帮助中心</div>
             <div>
-                <div></div>
-            </div>
+                <i class="el-icon-edit-outline"></i>
+                意见反馈</div>
             <div>
-                <div></div>
-            </div>
+                <i class="el-icon-notebook-2"></i>
+                用户协议</div>
             <div>
-                <div></div>
-            </div>
-            <div>
-                <div></div>
-            </div>
-        </div>
-        <div class="exit">
-            <el-button round>退出</el-button>
+                <i class="el-icon-user"></i>
+                关于我们</div>
         </div>
     </div>
 </template>
@@ -45,74 +43,80 @@ export default {
 </script>
 
 <style lang="scss">
-.personal{
-    box-sizing: border-box;
+.setAndAuthentication{
     width:100%;
-    padding:10px 15px;
-    .info{
-        position: relative;
-        background:rgb(245, 239, 239);
-        box-shadow: 0px 0px 3px rgb(211, 210, 210);
-        width:100%;
-        // border:1px solid red;
-        border-radius: 10px;
-        height:150px;
-        .headImg{
-            display: inline-block;
-            margin-top:10px;
-            margin-left:10px;
-            width:130px;
-            height:130px;
-            border-radius: 50%;
-            overflow: hidden;
-            img{
-                width:100%;
-                height:100%;
-            }
-        }
-        .des{
-            box-sizing: border-box;
-            width:100%;
-            height:100%;
-            position: absolute;
-            top:0px;
-            padding:10px 0 10px 150px;
-            >div{
-                height:40px;
-                display:inline-block;
-                width:48%;
-            }
-        }
+    height:34px;
+    background:rgb(153,102,51);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    .authentication{
+        padding:2px 6px;
+        font-size:12px;
+        background:rgb(214, 147, 22);
+        border-radius: 0 8px 8px 0;
     }
-    .ino{
-        width:100%;
-        font-size:0px;
-        margin-top:20px;
-        >div{
-            display:inline-block;
-            box-sizing: border-box;
-            width:50%;
-            height:60px;
-            // border:1px solid red;
-            margin-top:20px;
-            text-align:center;
-            >div{
-                width:80%;
-                height:100%;
-                background:chocolate;
-                display:inline-block;
-                // box-sizing: border-box;
-            }
-        }
-    }
-    .exit{
-        width:100%;
-        padding:30px 0;
-        .el-button{
-            margin-left:136px;
-        }
-
+    .set{
+        font-size:20px;
+        margin-right:15px;
     }
 
 }
+.info{
+    position: relative;
+    background:rgb(153,102,51);
+    height:220px;
+    width:100%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    // border-bottom:1px solid red;
+    img{
+        margin-top:26px;
+        width:80px;
+        height:80px;
+        // margin-left:-40px;
+        // position: absolute;
+        // top:35px;
+        // left:50%;
+        z-index: 10;
+        border-radius: 50%;
+    }
+    .userName{
+        margin-top:10px;
+        z-index: 10;
+    }
+    .id{
+        z-index:10;
+        margin-top:10px;
+        font-size:14px;
+        color:rgb(194, 192, 192);
+    }
+
+    &:after{
+        position: absolute;
+        top:70px;
+        left:-113px;
+        content:"";
+        width:600px;
+        height:600px;
+        background:#fff;
+        border-radius: 50%;
+    }
+}
+.option{
+    margin-top:10px;
+    width:100%;
+    background:#fff;
+    >div{
+        box-sizing: border-box;
+        width:100%;
+        padding:10px 15px;
+        border-bottom:2px solid #f6f6f6; 
+    }
+}
+
 </style>

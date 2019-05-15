@@ -27,7 +27,6 @@ export default {
 .msg{
     box-sizing: border-box;
     width:100%;
-    padding:15px;
     .el-input{
         width:90%;
         margin-right:10px;
