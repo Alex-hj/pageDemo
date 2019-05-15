@@ -5,7 +5,10 @@
         </div>
         <div class="tab-nav">
             <div>
-                <router-link :to="{name:'msg'}">消息</router-link>
+                <router-link :to="{name:'msg'}">
+                    <img src="../assets/images/msg.png" alt="">
+                    <span>消息</span>
+                </router-link>
             </div>
             <div>
                 <router-link :to="{name:'index'}">主页</router-link>
